@@ -1,0 +1,20 @@
+package com.spring.securityPractice.model;
+
+import lombok.*;
+
+import java.util.List;
+
+import com.spring.securityPractice.entity.Role;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+public class UserDto {
+	private long id;
+	private String userId;
+	private String email;
+	private String password;
+	private String role;
+
+}
