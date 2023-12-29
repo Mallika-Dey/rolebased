@@ -39,10 +39,12 @@ jobs:
       with:
         arguments: build
 
+    - name: Run Tests
+      run: ./gradlew test
+
     - name: Upload Artifact
       uses: actions/upload-artifact@v3
       with:
         name: Package
         path: build/libs
-
 
